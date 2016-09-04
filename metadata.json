@@ -5,7 +5,7 @@
    "project_page" : "https://github.com/link0/puppet-openntpd",
    "issues_url" : "https://github.com/link0/puppet-openntpd/issues",
    "source" : "https://github.com/link0/puppet-openntpd",
-   "version" : "0.0.1",
+   "version" : "0.0.2",
    "tags" : [
       "openntpd",
       "ntp"
