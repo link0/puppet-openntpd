@@ -66,6 +66,6 @@ The template file for the configuration file. Can be overridden for custom behav
 An array of servers to connect to. Type: `array` Defaults to a generic pool list.
 
 ### `listen`
-A value to let the daemon listen on. Type: `string` or `false`. Defaults to `false`.
-Example: `127.0.0.1`.
+A value to let the daemon listen on. Type: `string` or `array`. Defaults to `[]`.
+Example: `127.0.0.1`. or `['127.0.0.1', '::1']`
 

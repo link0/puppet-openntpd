@@ -21,6 +21,6 @@ class openntpd::params {
     '3.pool.ntp.org',
   ]
 
-  $listen = false
+  $listen = []
 
 }

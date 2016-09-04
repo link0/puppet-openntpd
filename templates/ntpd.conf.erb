@@ -1,5 +1,5 @@
-<% if @listen -%>
-listen on <%= @listen %>
+<% @real_listen.each do |listen| -%>
+listen on <%= listen %>
 <% end -%>
 <% @servers.each do |hostname| -%>
 servers <%= hostname %>

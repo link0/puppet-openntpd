@@ -33,9 +33,13 @@ class openntpd (
 
   validate_array($servers)
 
-  if $listen {
-    validate_string($listen)
+  # Be able to specify a string or list of strings, or nothing at all (to array style)
+  if is_string($listen) {
+    $real_listen = [$listen]
+  } else {
+    $real_listen = $listen
   }
+  validate_array($real_listen)
 
   # http://docs.puppetlabs.com/puppet/2.7/reference/lang_containment.html#known-issues
   anchor { 'openntpd::begin': } ->
