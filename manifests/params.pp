@@ -1,3 +1,5 @@
+# == Class: openntpd::params
+#
 class openntpd::params {
 
   $package_manage = true

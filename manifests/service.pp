@@ -1,3 +1,5 @@
+# == Class: openntpd::service
+#
 class openntpd::service inherits openntpd {
   if $openntpd::service_manage {
     service { 'openntpd':
